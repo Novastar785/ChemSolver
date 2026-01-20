@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "ChemSolver",
+    "slug": "chemsolver",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.adsegom.chemsolver",
+      "infoPlist": {
+        "CFBundleLocalizations": [
+          "en",
+          "es",
+          "pt",
+          "de",
+          "fr"
+        ],
+        "NSCameraUsageDescription": "This app uses the camera to scan chemical equations and periodic table elements for AI analysis.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photos to let you upload chemical problems for AI solving."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.adsegom.chemsolver",
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow ChemSolver to access your camera to scan equations."
+        }
+      ],
+      "expo-localization"
+    ]
+  }
+}

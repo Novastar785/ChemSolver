@@ -1,0 +1,344 @@
+[
+    {
+        "id": "water",
+        "type": "compound",
+        "category": "polar_molecule",
+        "difficulty": "beginner",
+        "formula": "H₂O",
+        "icon": "Droplet",
+        "color": "#3B82F6",
+        "molar_mass": "18.015 g/mol",
+        "density": "1 g/cm³"
+    },
+    {
+        "id": "salt",
+        "type": "compound",
+        "category": "ionic_salt",
+        "difficulty": "beginner",
+        "formula": "NaCl",
+        "icon": "Box",
+        "color": "#F59E0B",
+        "molar_mass": "58.44 g/mol",
+        "melting_point": "801 °C"
+    },
+    {
+        "id": "glucose",
+        "type": "compound",
+        "category": "organic_carbohydrate",
+        "difficulty": "intermediate",
+        "formula": "C₆H₁₂O₆",
+        "icon": "Sun",
+        "color": "#10B981",
+        "molar_mass": "180.16 g/mol",
+        "melting_point": "146 °C"
+    },
+    {
+        "id": "co2",
+        "type": "compound",
+        "category": "gas",
+        "difficulty": "beginner",
+        "formula": "CO₂",
+        "icon": "Atom",
+        "color": "#6B7280",
+        "molar_mass": "44.01 g/mol",
+        "phase": "Gas"
+    },
+    {
+        "id": "hcl",
+        "type": "compound",
+        "category": "acid",
+        "difficulty": "intermediate",
+        "formula": "HCl",
+        "icon": "FlaskConical",
+        "color": "#EF4444",
+        "molar_mass": "36.46 g/mol",
+        "properties": {
+            "acidity": "Strong Acid (pH < 1)"
+        }
+    },
+    {
+        "id": "naoh",
+        "type": "compound",
+        "category": "base",
+        "difficulty": "intermediate",
+        "formula": "NaOH",
+        "icon": "FlaskConical",
+        "color": "#3B82F6",
+        "molar_mass": "39.997 g/mol",
+        "properties": {
+            "basicity": "Strong Base (Alkali)"
+        }
+    },
+    {
+        "id": "ammonia",
+        "type": "compound",
+        "category": "base",
+        "difficulty": "intermediate",
+        "formula": "NH₃",
+        "icon": "FlaskConical",
+        "color": "#8B5CF6",
+        "molar_mass": "17.031 g/mol",
+        "boiling_point": "-33.34 °C"
+    },
+    {
+        "id": "ethanol",
+        "type": "compound",
+        "category": "organic_alcohol",
+        "difficulty": "intermediate",
+        "formula": "C₂H₅OH",
+        "icon": "Droplet",
+        "color": "#F59E0B",
+        "molar_mass": "46.07 g/mol",
+        "boiling_point": "78.37 °C"
+    },
+    {
+        "id": "acetic_acid",
+        "type": "compound",
+        "category": "organic_acid",
+        "difficulty": "intermediate",
+        "formula": "CH₃COOH",
+        "icon": "FlaskConical",
+        "color": "#F59E0B",
+        "molar_mass": "60.05 g/mol",
+        "properties": {
+            "acidity": "Weak Acid"
+        }
+    },
+    {
+        "id": "calcium_carbonate",
+        "type": "compound",
+        "category": "ionic_salt",
+        "difficulty": "intermediate",
+        "formula": "CaCO₃",
+        "icon": "Box",
+        "color": "#9CA3AF",
+        "molar_mass": "100.09 g/mol",
+        "phase": "Solid"
+    },
+    {
+        "id": "nitric_acid",
+        "type": "compound",
+        "category": "acid",
+        "difficulty": "advanced",
+        "formula": "HNO₃",
+        "icon": "FlaskConical",
+        "color": "#EF4444",
+        "molar_mass": "63.01 g/mol",
+        "properties": {
+            "acidity": "Strong Oxidizing Acid"
+        }
+    },
+    {
+        "id": "sulfuric_acid",
+        "type": "compound",
+        "category": "acid",
+        "difficulty": "advanced",
+        "formula": "H₂SO₄",
+        "icon": "FlaskConical",
+        "color": "#8B5CF6",
+        "properties": {
+            "acidity": "Strong Acid (pKa ≈ -3)",
+            "viscosity": "High"
+        }
+    },
+    {
+        "id": "baking_soda",
+        "type": "compound",
+        "category": "base",
+        "difficulty": "beginner",
+        "formula": "NaHCO₃",
+        "icon": "Box",
+        "color": "#10B981",
+        "molar_mass": "84.007 g/mol",
+        "phase": "Solid"
+    },
+    {
+        "id": "methane",
+        "type": "compound",
+        "category": "organic_alkane",
+        "difficulty": "beginner",
+        "formula": "CH₄",
+        "icon": "Flame",
+        "color": "#F97316",
+        "molar_mass": "16.04 g/mol",
+        "phase": "Gas"
+    },
+    {
+        "id": "butane",
+        "type": "compound",
+        "category": "organic_alkane",
+        "difficulty": "intermediate",
+        "formula": "C₄H₁₀",
+        "icon": "Flame",
+        "color": "#F59E0B",
+        "molar_mass": "58.12 g/mol",
+        "phase": "Gas"
+    },
+    {
+        "id": "nitrogen",
+        "type": "compound",
+        "category": "gas",
+        "difficulty": "beginner",
+        "formula": "N₂",
+        "icon": "Atom",
+        "color": "#3B82F6",
+        "molar_mass": "28.02 g/mol",
+        "phase": "Gas"
+    },
+    {
+        "id": "oxygen",
+        "type": "compound",
+        "category": "gas",
+        "difficulty": "beginner",
+        "formula": "O₂",
+        "icon": "Atom",
+        "color": "#EF4444",
+        "molar_mass": "31.998 g/mol",
+        "phase": "Gas"
+    },
+    {
+        "id": "benzene",
+        "type": "compound",
+        "category": "organic_aromatic",
+        "difficulty": "advanced",
+        "formula": "C₆H₆",
+        "icon": "Hexagon",
+        "color": "#8B5CF6",
+        "molar_mass": "78.11 g/mol",
+        "properties": {
+            "structure": "Aromatic Ring"
+        }
+    },
+    {
+        "id": "aspirin",
+        "type": "compound",
+        "category": "organic_drug",
+        "difficulty": "advanced",
+        "formula": "C₉H₈O₄",
+        "icon": "Box",
+        "color": "#EC4899",
+        "molar_mass": "180.16 g/mol",
+        "melting_point": "135 °C"
+    },
+    {
+        "id": "caffeine",
+        "type": "compound",
+        "category": "organic_alkaloid",
+        "difficulty": "advanced",
+        "formula": "C₈H₁₀N₄O₂",
+        "icon": "Zap",
+        "color": "#8B5CF6",
+        "molar_mass": "194.19 g/mol",
+        "melting_point": "235 °C"
+    },
+    {
+        "id": "ozone",
+        "type": "compound",
+        "category": "gas",
+        "difficulty": "intermediate",
+        "formula": "O₃",
+        "icon": "ShieldAlert",
+        "color": "#3B82F6",
+        "molar_mass": "48.00 g/mol",
+        "phase": "Gas"
+    },
+    {
+        "id": "photosynthesis",
+        "type": "reaction",
+        "category": "biological",
+        "difficulty": "intermediate",
+        "formula": "6CO₂ + 6H₂O + hν → C₆H₁₂O₆ + 6O₂",
+        "icon": "Sun",
+        "color": "#10B981"
+    },
+    {
+        "id": "combustion",
+        "type": "reaction",
+        "category": "redox",
+        "difficulty": "intermediate",
+        "formula": "CH₄ + 2O₂ → CO₂ + 2H₂O",
+        "icon": "Flame",
+        "color": "#EF4444"
+    },
+    {
+        "id": "respiration",
+        "type": "reaction",
+        "category": "biological",
+        "difficulty": "intermediate",
+        "formula": "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + Energy",
+        "icon": "Atom",
+        "color": "#EC4899"
+    },
+    {
+        "id": "neutralization",
+        "type": "reaction",
+        "category": "acid_base",
+        "difficulty": "beginner",
+        "formula": "HCl + NaOH → NaCl + H₂O",
+        "icon": "FlaskConical",
+        "color": "#6366F1"
+    },
+    {
+        "id": "fermentation",
+        "type": "reaction",
+        "category": "biological",
+        "difficulty": "intermediate",
+        "formula": "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂",
+        "icon": "Droplet",
+        "color": "#D97706"
+    },
+    {
+        "id": "rusting",
+        "type": "reaction",
+        "category": "oxidation",
+        "difficulty": "beginner",
+        "formula": "4Fe + 3O₂ + 6H₂O → 4Fe(OH)₃",
+        "icon": "ShieldAlert",
+        "color": "#D97706"
+    },
+    {
+        "id": "decomposition_h2o2",
+        "type": "reaction",
+        "category": "decomposition",
+        "difficulty": "advanced",
+        "formula": "2H₂O₂ → 2H₂O + O₂",
+        "icon": "FlaskConical",
+        "color": "#14B8A6"
+    },
+    {
+        "id": "synthesis_water",
+        "type": "reaction",
+        "category": "synthesis",
+        "difficulty": "beginner",
+        "formula": "2H₂ + O₂ → 2H₂O",
+        "icon": "Droplet",
+        "color": "#3B82F6"
+    },
+    {
+        "id": "esterification",
+        "type": "reaction",
+        "category": "organic",
+        "difficulty": "advanced",
+        "formula": "RCOOH + R'OH → RCOOR' + H₂O",
+        "icon": "FlaskConical",
+        "color": "#8B5CF6"
+    },
+    {
+        "id": "haber_process",
+        "type": "reaction",
+        "category": "industrial",
+        "difficulty": "advanced",
+        "formula": "N₂ + 3H₂ ⇌ 2NH₃",
+        "icon": "FlaskConical",
+        "color": "#F59E0B"
+    },
+    {
+        "id": "saponification",
+        "type": "reaction",
+        "category": "organic",
+        "difficulty": "intermediate",
+        "formula": "Fat + Lye → Soap + Glycerol",
+        "icon": "Box",
+        "color": "#10B981"
+    }
+]

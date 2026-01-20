@@ -1,0 +1,587 @@
+{
+    "common": {
+        "loading": "Loading...",
+        "error": "Error",
+        "back": "Back",
+        "ok": "OK",
+        "cancel": "Cancel",
+        "success": "Success"
+    },
+    "tabs": {
+        "table": "Table",
+        "solver": "Solver",
+        "challenge": "Challenge",
+        "learn": "Learn",
+        "profile": "Profile"
+    },
+    "learn": {
+        "title": "Learning Center",
+        "subtitle": "Master chemical concepts",
+        "compounds": "Compounds",
+        "reactions": "Reactions",
+        "origin": "Origin & History",
+        "structure": "Structure",
+        "process": "Mechanism Process",
+        "properties": "Key Properties",
+        "fun_fact": "Did You Know?",
+        "steps": "Step-by-Step Mechanism",
+        "topics": {
+            "water": {
+                "title": "Water",
+                "description": "Essential for all known forms of life. A polar molecule capable of dissolving many substances.",
+                "details": {
+                    "origin": "Formed in the interstellar medium and abundant in the solar system. Earth's water likely came from asteroids and comets.",
+                    "structure": "Bent molecular geometry with H-O-H angle of 104.5°. Displays hydrogen bonding.",
+                    "fun_fact": "Water is the only common substance found naturally in all three distinct states of matter: solid, liquid, and gas.",
+                    "properties": "Universal Solvent, High Heat Capacity, High Surface Tension."
+                }
+            },
+            "salt": {
+                "title": "Sodium Chloride",
+                "description": "Common table salt. Essential for electrolyte balance in animals and seasoning food.",
+                "details": {
+                    "origin": "Extracted from salt mines or by evaporating seawater. Historically used as currency.",
+                    "structure": "Giant ionic lattice structure. Each Na+ ion is surrounded by 6 Cl- ions.",
+                    "fun_fact": "Sodium is an explode-in-water metal, Chlorine is a toxic gas, but together they are edible salt!",
+                    "properties": "Soluble in water, High melting point, Conducts electricity when molten."
+                }
+            },
+            "photosynthesis": {
+                "title": "Photosynthesis",
+                "description": "The process by which plants use sunlight, water, and carbon dioxide to create oxygen and energy in the form of sugar.",
+                "details": {
+                    "origin": "Evolved ~3 billion years ago in cyanobacteria, oxygenating Earth's atmosphere.",
+                    "process": "Occurs in chloroplasts using chlorophyll pigment.",
+                    "reaction_steps": [
+                        "1. Light Absorption: Chlorophyll absorbs sunlight photons.",
+                        "2. Water Splitting (Photolysis): Water is broken into O2, H+, and e-.",
+                        "3. Carbon Fixation (Calvin Cycle): CO2 is converted into Glucose (sugar)."
+                    ],
+                    "fun_fact": "This single process is responsible for nearly all oxygen in our atmosphere."
+                }
+            },
+            "combustion": {
+                "title": "Combustion",
+                "description": "A high-temperature exothermic redox chemical reaction between a fuel (like methane) and an oxidant (oxygen).",
+                "details": {
+                    "origin": "Fire was discovered by early humans ~1.5 million years ago, revolutionizing diet and protection.",
+                    "process": "Rapid oxidation generating heat and light.",
+                    "reaction_steps": [
+                        "1. Ignition: Heat must be applied to break bonds (Activation Energy).",
+                        "2. Reaction: Fuel (C, H) reacts with Oxygen (O2).",
+                        "3. Release: Formation of CO2 and H2O releases massive energy."
+                    ],
+                    "fun_fact": "Complete combustion produces blue flame; incomplete produces yellow/orange (soot)."
+                }
+            },
+            "sulfuric_acid": {
+                "title": "Sulfuric Acid",
+                "description": "A strong mineral acid with many industrial applications, including fertilizer production and refining oil.",
+                "details": {
+                    "origin": "Known to medieval alchemists as 'oil of vitriol'.",
+                    "structure": "Tetrahedral geometry at Sulfur. Strong dehydrating agent.",
+                    "fun_fact": "It is the most produced chemical in the world by volume.",
+                    "properties": "Highly Corrosive, Hygroscopic (absorbs water from air)."
+                }
+            },
+            "glucose": {
+                "title": "Glucose",
+                "description": "A simple sugar that is an important energy source in living organisms and is a component of many carbohydrates.",
+                "details": {
+                    "origin": "Discovered by Andreas Marggraf in 1747 from raisins.",
+                    "structure": "Can exist as a linear chain or a ring (cyclic) structure.",
+                    "fun_fact": "The brain uses about 20% of the body's total glucose energy."
+                }
+            },
+            "co2": {
+                "title": "Carbon Dioxide",
+                "description": "A colorless gas produced by burning carbon and organic compounds and by respiration.",
+                "details": {
+                    "origin": "First gas to be described as a discrete substance by Jan Baptist van Helmont (17th century).",
+                    "structure": "Linear molecule with double bonds (O=C=O).",
+                    "fun_fact": "Solid CO2 is called 'Dry Ice' because it sublimates directly to gas."
+                }
+            },
+            "hcl": {
+                "title": "Hydrochloric Acid",
+                "description": "A strong, corrosive acid that is widely used in industry and found naturally in gastric acid.",
+                "details": {
+                    "origin": "Historically called 'muriatic acid' or 'spirits of salt'.",
+                    "structure": "Diatomic molecule HCl. Fully dissociates in water.",
+                    "fun_fact": "Your stomach produces this acid to digest food (pH 1.5-3.5)!"
+                }
+            },
+            "naoh": {
+                "title": "Sodium Hydroxide",
+                "description": "Also known as lye and caustic soda, an inorganic compound with the formula NaOH.",
+                "details": {
+                    "origin": "Traditionally obtained by leaching ashes (potash).",
+                    "structure": "Ionic crystal containing Na+ and OH- ions.",
+                    "fun_fact": "Used to make soap, paper, and even pretzels (in food grade)!"
+                }
+            },
+            "ammonia": {
+                "title": "Ammonia",
+                "description": "A compound of nitrogen and hydrogen with the formula NH3. A colorless gas with a characteristic pungent smell.",
+                "details": {
+                    "origin": "Named after the Temple of Jupiter Ammon in Libya where ammonium salts were collected.",
+                    "structure": "Trigonal pyramidal geometry.",
+                    "fun_fact": "About 80% or more of ammonia produced is used for fertilizing agricultural crops."
+                }
+            },
+            "nitric_acid": {
+                "title": "Nitric Acid",
+                "description": "A highly corrosive mineral acid. The pure compound is colorless, but older samples tend to be yellow.",
+                "details": {
+                    "origin": "First mentioned in the 8th century by Jabir ibn Hayyan.",
+                    "structure": "Planar molecule.",
+                    "fun_fact": "It is mainly used for the production of fertilizers and explosives (TNT)."
+                }
+            },
+            "baking_soda": {
+                "title": "Baking Soda",
+                "description": "Sodium bicarbonate (NaHCO3), widely used in baking.",
+                "details": {
+                    "origin": "First produced by French chemist Nicolas Leblanc in 1791.",
+                    "structure": "Ionic crystal.",
+                    "fun_fact": "It releases CO2 gas when heated or mixed with acid, helping cakes rise."
+                }
+            },
+            "ethanol": {
+                "title": "Ethanol",
+                "description": "A volatile, flammable, colorless liquid with a slight characteristic odor.",
+                "details": {
+                    "origin": "Fermentation of sugars is one of the earliest biotechnologies employed by humans.",
+                    "structure": "Simple alcohol (C2H5OH).",
+                    "fun_fact": "It is the psychoactive ingredient in alcoholic drinks and also a biofuel."
+                }
+            },
+            "butane": {
+                "title": "Butane",
+                "description": "An organic compound with the formula C4H10 that is an alkane with four carbon atoms.",
+                "details": {
+                    "origin": "Discovered by Edward Frankland in 1849.",
+                    "structure": "Straight chain alkane.",
+                    "fun_fact": "It is commonly used as fuel for lighters and portable stoves."
+                }
+            },
+            "methane": {
+                "title": "Methane",
+                "description": "A chemical compound with the chemical formula CH4 (one atom of carbon and four atoms of hydrogen).",
+                "details": {
+                    "origin": "Alessandro Volta discovered methane in the reeds of Lake Maggiore in 1776.",
+                    "structure": "Tetrahedral geometry.",
+                    "fun_fact": "It is the main constituent of natural gas and a potent greenhouse gas."
+                }
+            },
+            "nitrogen": {
+                "title": "Nitrogen Gas",
+                "description": "A colorless, odorless unreactive gas that forms about 78% of Earth's atmosphere.",
+                "details": {
+                    "origin": "Discovered by Daniel Rutherford in 1772.",
+                    "structure": "Diatomic molecule with a very strong triple bond.",
+                    "fun_fact": "Liquid nitrogen is used for cryotherapy and making smooth ice cream instantly."
+                }
+            },
+            "oxygen": {
+                "title": "Oxygen Gas",
+                "description": "A highly reactive nonmetal, and an oxidizing agent that readily forms oxides with most elements.",
+                "details": {
+                    "origin": "Independently discovered by Scheele and Priestley in the 1770s.",
+                    "structure": "Diatomic molecule O=O.",
+                    "fun_fact": "About 50-80% of the oxygen production on Earth comes from the ocean (plankton)."
+                }
+            },
+            "respiration": {
+                "title": "Cellular Respiration",
+                "description": "Metabolic reactions that take place in the cells of organisms to convert biochemical energy from nutrients into ATP.",
+                "details": {
+                    "process": "Glycolysis -> Krebs Cycle -> Electron Transport Chain.",
+                    "reaction_steps": [
+                        "1. Glucose + Oxygen are reactants.",
+                        "2. Energy is released as ATP.",
+                        "3. Waste products are CO2 and Water."
+                    ],
+                    "fun_fact": "It is effectively the reverse of photosynthesis."
+                }
+            },
+            "neutralization": {
+                "title": "Neutralization",
+                "description": "A chemical reaction in which acid and a base react quantitatively with each other.",
+                "details": {
+                    "process": "Acid + Base -> Salt + Water.",
+                    "reaction_steps": [
+                        "1. Protons (H+) from acid react with Hydroxide (OH-) from base.",
+                        "2. H+ + OH- -> H2O (Water formation).",
+                        "3. Remaining ions form the salt."
+                    ],
+                    "fun_fact": "This reaction is used to treat acidic soil or neutralize stomach acid (antacids)."
+                }
+            },
+            "decomposition_h2o2": {
+                "title": "H₂O₂ Decomposition",
+                "description": "The breakdown of hydrogen peroxide into water and oxygen, often catalyzed.",
+                "details": {
+                    "process": "Catalytic decomposition (e.g., using Potassium Iodide or Yeast).",
+                    "fun_fact": "Famous as the 'Elephant Toothpaste' experiment due to rapid foam production."
+                }
+            },
+            "synthesis_water": {
+                "title": "Synthesis of Water",
+                "description": "The explosive reaction between hydrogen and oxygen to form water.",
+                "details": {
+                    "process": "Exothermic combination.",
+                    "fun_fact": "This reaction powers the main engines of the Space Shuttle."
+                }
+            },
+            "acetic_acid": {
+                "title": "Acetic Acid",
+                "description": "An organic acid that gives vinegar its sour taste and pungent smell.",
+                "details": {
+                    "origin": "Known since antiquity as the main component of vinegar.",
+                    "structure": "Carboxylic acid group (-COOH).",
+                    "fun_fact": "Glacial acetic acid freezes at 16.6°C (61.9°F), forming crystals that look like ice."
+                }
+            },
+            "calcium_carbonate": {
+                "title": "Calcium Carbonate",
+                "description": "A chemical compound with the formula CaCO3. It is a common substance found in rocks.",
+                "details": {
+                    "origin": "Main component of pearls and the shells of marine organisms.",
+                    "structure": "Ionic lattice.",
+                    "fun_fact": "It is the active ingredient in agricultural lime and is created when hard water evaporates."
+                }
+            },
+            "benzene": {
+                "title": "Benzene",
+                "description": "An organic chemical compound with the molecular formula C6H6. The benzene molecule is composed of six carbon atoms joined in a planar ring.",
+                "details": {
+                    "origin": "Michael Faraday first isolated benzene in 1825.",
+                    "structure": "Aromatic ring with delocalized pi electrons.",
+                    "fun_fact": "Its ring structure came to Kekulé in a dream of a snake biting its own tail (Ouroboros)."
+                }
+            },
+            "fermentation": {
+                "title": "Fermentation",
+                "description": "A metabolic process that produces chemical changes in organic substrates through the action of enzymes.",
+                "details": {
+                    "process": "Anaerobic conversion of sugar to ethanol and CO2 (in yeast).",
+                    "fun_fact": "Louis Pasteur was the first zymologist (scientist who studies fermentation)."
+                }
+            },
+            "esterification": {
+                "title": "Esterification",
+                "description": "The chemical reaction between an acid and an alcohol which forms an ester.",
+                "details": {
+                    "process": "Condensation reaction releasing water.",
+                    "fun_fact": "Esters are responsible for the pleasant fruity smells of bananas, pears, and pineapples."
+                }
+            },
+            "aspirin": {
+                "title": "Aspirin",
+                "description": "Acetylsalicylic acid, a medication used to treat pain, fever, or inflammation.",
+                "details": {
+                    "origin": "First synthesized by Felix Hoffmann at Bayer in 1897.",
+                    "structure": "Contains an ester group and a carboxylic acid group.",
+                    "fun_fact": "It is one of the most widely used medications globally, with an estimated 40,000 tonnes consumed each year."
+                }
+            },
+            "caffeine": {
+                "title": "Caffeine",
+                "description": "A central nervous system stimulant of the methylxanthine class.",
+                "details": {
+                    "origin": "First isolated by Friedlieb Ferdinand Runge in 1819.",
+                    "structure": "Purine alkaloid.",
+                    "fun_fact": "In plants, caffeine acts as a natural pesticide that paralyzes and kills insects feeding on the plant."
+                }
+            },
+            "ozone": {
+                "title": "Ozone",
+                "description": "An inorganic molecule with the chemical formula O3. It is a pale blue gas with a distinctively pungent smell.",
+                "details": {
+                    "origin": "Discovered by Christian Friedrich Schönbein in 1840.",
+                    "structure": "Bent molecule.",
+                    "fun_fact": "The Ozone Layer absorbs most of the Sun's ultraviolet radiation, protecting life on Earth."
+                }
+            },
+            "haber_process": {
+                "title": "Haber Process",
+                "description": "An industrial process for producing ammonia from nitrogen and hydrogen.",
+                "details": {
+                    "process": "High pressure and temperature with iron catalyst.",
+                    "reaction_steps": [
+                        "1. N2 + 3H2 gases are pressurized.",
+                        "2. Passed over iron catalyst at 450°C.",
+                        "3. Ammonia is condensed and collected."
+                    ],
+                    "fun_fact": "This process sustains about 40% of the world's population through fertilizer production."
+                }
+            },
+            "saponification": {
+                "title": "Saponification",
+                "description": "A process that involves conversion of fat, oil, or lipid into soap and alcohol by the action of heat in the presence of aqueous alkali.",
+                "details": {
+                    "process": "Hydrolysis of triglycerides.",
+                    "fun_fact": "The name comes from the Latin 'sapo', meaning soap."
+                }
+            },
+            "rusting": {
+                "title": "Rusting (Oxidation)",
+                "description": "An oxidation reaction. Iron reacts with water and oxygen to form hydrated iron(III) oxide (rust).",
+                "details": {
+                    "origin": "The degradation of iron artifacts is a major challenge in archaeology.",
+                    "process": "Electrochemical corrosion process.",
+                    "reaction_steps": [
+                        "1. Anodic Site: Iron loses electrons (Fe -> Fe2+ + 2e-).",
+                        "2. Cathodic Site: Oxygen accepts electrons with water (O2 + 4e- + 2H2O -> 4OH-).",
+                        "3. Formation: Fe2+ and OH- react to form Iron(III) hydroxides, drying to Rust."
+                    ],
+                    "fun_fact": "Salt water accelerates rusting because ions increase conductivity."
+                }
+            }
+        }
+    },
+    "table": {
+        "title": "Periodic Table",
+        "legend": {
+            "title": "Element Categories"
+        }
+    },
+    "solver": {
+        "title": "Solver AI",
+        "subtitle": "Scan & Solve Instantly",
+        "scan_camera": "Scan Problem",
+        "scan_gallery": "Upload from Gallery",
+        "hint": "Take a clear photo of a chemical equation or reaction to verify its balance or properties.",
+        "analyzing": "Analyzing your image...",
+        "detected": "Problem Detected",
+        "steps": "Step-by-Step Solution",
+        "new_scan": "Scan Another",
+        "error_msg": "Unable to analyze image: {{error}}"
+    },
+    "challenge": {
+        "title": "Challenge Arena",
+        "subtitle": "Select your game mode",
+        "play_now": "PLAY NOW",
+        "true": "True",
+        "false": "False",
+        "modes": {
+            "time_attack": {
+                "title": "Time Attack",
+                "subtitle": "The Ultimate Mix",
+                "description": "Mixed questions about symbols, numbers, and mass. Fast-paced random challenge!"
+            },
+            "name_master": {
+                "title": "Element Naming",
+                "subtitle": "Symbol to Name",
+                "description": "We show you the chemical symbol, you pick the correct element name."
+            },
+            "symbol_hunter": {
+                "title": "Symbol Hunter",
+                "subtitle": "Name to Symbol",
+                "description": "Identify the correct chemical symbol for the given element name."
+            },
+            "family_truth": {
+                "title": "Chemical Families",
+                "subtitle": "True or False",
+                "description": "Validate statements about element families. Is \"Gold\" a \"Noble Gas\"? True or False."
+            },
+            "lab_master": {
+                "title": "Lab Master",
+                "subtitle": "Compounds & Reactions",
+                "description": "Test your knowledge on compounds and reactions. Can you identify Water from H2O?"
+            }
+        },
+        "questions": {
+            "symbol": "What is the chemical symbol for {{element}}?",
+            "name": "Which element has the symbol \"{{symbol}}\"?",
+            "number": "What is the atomic number of {{element}}?",
+            "category": "To which category does {{element}} belong?",
+            "mass": "What is the approximate atomic mass of {{element}}?",
+            "boolean": "Is {{element}} a {{category}}?",
+            "formula_to_name": "What is the name of the compound/reaction with formula \"{{formula}}\"?",
+            "name_to_formula": "What is the formula for {{name}}?"
+        }
+    },
+    "profile": {
+        "rank_label": "Rank",
+        "score_label": "Score",
+        "solved_label": "Solved",
+        "rank_value": "Novice",
+        "pro_title": "ChemSolver Premium",
+        "pro_subtitle": "Unlock unlimited scans & advanced stats",
+        "pro_status": "Premium Active",
+        "purchase_success": "You are now a Premium member!",
+        "restore_success": "Purchases restored successfully!",
+        "restore_fail": "No active subscriptions found.",
+        "section_general": "General",
+        "menu": {
+            "edit": "Edit Profile",
+            "notifications": "Notifications",
+            "privacy": "Privacy & Security",
+            "support": "Need Help?",
+            "terms": "Terms of Use",
+            "restore": "Restore Purchases",
+            "manage": "Manage Subscription"
+        },
+        "logout": "Log Out",
+        "user_name": "Chemist User",
+        "user_handle": "@future_scientist",
+        "level": "Level {{level}}",
+        "promo": {
+            "title": "Beta Trial",
+            "enter_code": "Enter your 6-digit trial code",
+            "redeem": "Redeem Code",
+            "success": "7-day trial activated! Enjoy Premium.",
+            "invalid_code": "Invalid trial code. Try again.",
+            "already_used_device": "This device has already used a trial code."
+        }
+    },
+    "legal": {
+        "privacy_title": "Privacy Policy",
+        "terms_title": "Terms of Service",
+        "last_updated": "Last Updated: {{date}}",
+        "privacy": {
+            "intro": "This Privacy Policy explains how ADSEGOM LTD collects, uses, and discloses information about you when you use ChemSolver.",
+            "section_1": {
+                "title": "1. Information We Collect",
+                "sub_a": "a. Information You Provide",
+                "content_a": "• User Content: Photos of chemical symbols, periodic tables, or related data you upload for AI processing.",
+                "sub_b": "b. Information Collected Automatically",
+                "content_b": "• Usage Data: Features used, frequency of use.\n• Device Information: Model, OS version.\n• Anonymous Identifiers: App User IDs for subscription management."
+            },
+            "section_2": {
+                "title": "2. How We Use Your Information",
+                "content": "• Provide and improve the App.\n• Process AI Requests: To identify chemical elements and provide educational context as requested.\n• Image Usage: We use the data in your uploaded photos solely to analyze the chemical data you request. We do not use this data for authentication or tracking.\n• Data is shared with AI providers only for the duration of the analysis process.\n• Manage accounts and subscriptions.\n• Respond to support requests."
+            },
+            "section_3": {
+                "title": "3. How We Share Your Information",
+                "content": "We do not sell your personal data. We share data only with AI Providers (for processing), Backend Infrastructure (for storage), and for Legal Requirements."
+            },
+            "section_4": {
+                "title": "4. Image Processing & Retention",
+                "content": "• Images are converted and sent to AI providers securely.\n• Retention: We do NOT permanently store your source images after processing.\n• Data Policy: We do not sell, trade, or transfer your image data to third parties.\n• We retain anonymous account info while active."
+            },
+            "section_5": {
+                "title": "5. Data Security",
+                "content": "We use industry-standard security measures. However, no internet transmission is 100% secure."
+            },
+            "section_6": {
+                "title": "6. Deletion of Data",
+                "content": "You may request deletion of your account and data within the app or by contacting us."
+            },
+            "section_7": {
+                "title": "7. Children's Privacy",
+                "content": "The App is not intended for children under 18. We do not knowingly collect info from children."
+            },
+            "section_8": {
+                "title": "8. Changes to Policy",
+                "content": "We may update this policy. We will notify you of changes."
+            },
+            "section_9": {
+                "title": "9. Contact Us",
+                "content": "If you have questions, please contact us at info@rizzflows.com (ADSEGOM LTD)."
+            }
+        },
+        "terms": {
+            "intro": "Welcome to ChemSolver, a mobile application operated by ADSEGOM LTD ('Company', 'we', 'us', 'our'). These Terms of Service (the 'Legal Terms') govern your access to and use of the App. By using the Services, you agree to be bound by these Legal Terms.",
+            "section_1": {
+                "title": "1. Agreement to Terms and Eligibility",
+                "content": "The App is intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use or register for the Services.",
+                "sub_reps": "User Representations:",
+                "content_reps": "• You have the legal capacity and agree to comply with these Legal Terms.\n• You are not a minor in the jurisdiction in which you reside.\n• You will not access the Services through automated or non-human means (bots, scripts).\n• You will not use the Services for any illegal or unauthorized purpose."
+            },
+            "section_2": {
+                "title": "2. Description of Our Services and AI Disclaimer",
+                "content": "ChemSolver is an AI-powered educational tool designed to scan and identify chemical elements, providing data like atomic mass and category. The App allows users to upload photos of chemical text or symbols to receive AI-analyzed content.",
+                "sub_ai": "IMPORTANT AI DISCLAIMER:",
+                "content_ai": "The content generated is powered by Artificial Intelligence. The AI may make mistakes or 'hallucinate'. We do not guarantee accuracy. Data is provided for educational purposes only and should not be used as critical laboratory or safety advice. You are responsible for reviewing generated information."
+            },
+            "section_3": {
+                "title": "3. Purchases and Subscriptions",
+                "content": "Payments: You agree to provide current, complete, and accurate purchase information. Transactions are processed by the respective app store.\nSubscriptions: Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period.\nCancellation and Refunds: All purchases are non-refundable. Refund requests must be made through Apple or Google."
+            },
+            "section_4": {
+                "title": "4. Intellectual Property Rights",
+                "content": "We own all intellectual property rights in our Services. We grant you a revocable, non-exclusive, limited right to install and use the Application."
+            },
+            "section_5": {
+                "title": "5. User-Generated Contributions",
+                "content": "By posting Contributions (photos), you grant us a right to host, use, and process them for the purpose of providing the AI analysis services. You warrant that your Contributions do not infringe any third-party rights."
+            },
+            "section_6": {
+                "title": "6. Prohibited Activities",
+                "content": "• Systematically retrieve data to create databases.\n• Trick, defraud, or mislead other users.\n• Upload viruses or harmful material.\n• Use the Services to generate NSFW or illegal content."
+            },
+            "section_7": {
+                "title": "7. Third-Party Content",
+                "content": "The Services may contain links to third-party websites. We do not investigate or monitor these Third-Party Contents."
+            },
+            "section_8": {
+                "title": "8. Termination",
+                "content": "We reserve the right to deny access to the Services for any reason, including breach of these Legal Terms."
+            },
+            "section_9": {
+                "title": "9. Modifications",
+                "content": "We reserve the right to change or remove the contents of the Services at any time."
+            },
+            "section_10": {
+                "title": "10. Disclaimer of Warranties",
+                "content": "THE SERVICES ARE PROVIDED ON AN 'AS IS' AND 'AS AVAILABLE' BASIS. YOUR USE OF THE SERVICES WILL BE AT YOUR SOLE RISK."
+            },
+            "section_11": {
+                "title": "11. Limitations of Liability",
+                "content": "IN NO EVENT WILL WE BE LIABLE FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES."
+            },
+            "section_12": {
+                "title": "12. Indemnification",
+                "content": "You agree to defend, indemnify, and hold us harmless from any loss, damage, liability, claim, or demand."
+            },
+            "section_13": {
+                "title": "13. Privacy Policy and User Data",
+                "content": "We care about data privacy and security. Please review our Privacy Policy, which is incorporated into these Legal Terms."
+            },
+            "section_14": {
+                "title": "14. Electronic Communications",
+                "content": "You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and other communications we provide to you electronically satisfy any legal requirement."
+            },
+            "section_15": {
+                "title": "15. Governing Law",
+                "content": "These Legal Terms are governed by the laws of the State of Delaware (United States)."
+            },
+            "section_16": {
+                "title": "16. Dispute Resolution",
+                "content": "Disputes will be resolved by binding arbitration in Delaware."
+            },
+            "section_17": {
+                "title": "17. Miscellaneous",
+                "content": "These Legal Terms constitute the entire agreement. If any provision is determined to be unlawful, that provision is deemed severable."
+            },
+            "section_18": {
+                "title": "18. Contact Us",
+                "content": "For any questions, please contact us at info@rizzflows.com (ADSEGOM LTD)."
+            }
+        }
+    },
+    "modals": {
+        "error_title": "Something went wrong",
+        "close": "Close",
+        "camera_title": "Camera Access",
+        "camera_desc": "ChemSolver needs your camera to scan chemical equations and solve them instantly.",
+        "allow_camera": "Allow Camera",
+        "notifications_title": "Stay Updated!",
+        "notifications_desc": "Enable notifications to get daily chemistry facts and reminders to keep your streak alive.",
+        "enable_notifications": "Enable Notifications",
+        "later": "Later"
+    },
+    "share": {
+        "problem": "PROBLEM",
+        "solution": "SOLUTION",
+        "steps_title": "Step-by-Step",
+        "generated_with": "Generated with"
+    },
+    "notifications": {
+        "default_title": "Did You Know?",
+        "default_body": "Chemistry is full of surprises! Check back later for more facts."
+    }
+}

@@ -1,0 +1,284 @@
+{
+    "common": {
+        "loading": "Carregando...",
+        "error": "Erro",
+        "back": "Voltar",
+        "ok": "OK",
+        "cancel": "Cancelar",
+        "success": "Sucesso"
+    },
+    "tabs": {
+        "table": "Tabela",
+        "solver": "Resolver",
+        "challenge": "Desafio",
+        "learn": "Aprender",
+        "profile": "Perfil"
+    },
+    "learn": {
+        "title": "Centro de Aprendizagem",
+        "subtitle": "Domine conceitos químicos",
+        "compounds": "Compostos",
+        "reactions": "Reações",
+        "topics": {
+            "water": {
+                "title": "Água",
+                "description": "Essencial para todas as formas de vida conhecidas. Molécula polar capaz de dissolver muitas substâncias."
+            },
+            "salt": {
+                "title": "Cloreto de Sódio",
+                "description": "Sal de cozinha comum. Essencial para o equilíbrio eletrolítico em animais e para temperar alimentos."
+            },
+            "photosynthesis": {
+                "title": "Fotossíntese",
+                "description": "Processo pelo qual as plantas usam luz solar, água e dióxido de carbono para criar oxigênio e energia (açúcar)."
+            },
+            "combustion": {
+                "title": "Combustão",
+                "description": "Reação química exotérmica redox a alta temperatura entre um combustível (como metano) e um oxidante (oxigênio)."
+            },
+            "sulfuric_acid": {
+                "title": "Ácido Sulfúrico",
+                "description": "Ácido mineral forte com muitas aplicações industriais, incluindo produção de fertilizantes e refino de petróleo."
+            },
+            "rusting": {
+                "title": "Ferrugem (Oxidação)",
+                "description": "Reação de oxidação. O ferro reage com água e oxigênio para formar óxido de ferro(III) hidratado (ferrugem)."
+            }
+        }
+    },
+    "table": {
+        "title": "Tabela Periódica",
+        "legend": {
+            "title": "Categorias de Elementos"
+        }
+    },
+    "solver": {
+        "title": "Solver AI",
+        "subtitle": "Escaneie e Resolva",
+        "scan_camera": "Escanear Problema",
+        "scan_gallery": "Upload da Galeria",
+        "hint": "Tire uma foto clara de uma equação química ou reação para verificar seu equilíbrio ou propriedades.",
+        "analyzing": "Analisando sua imagem...",
+        "detected": "Problema Detectado",
+        "steps": "Solução Passo a Passo",
+        "new_scan": "Escanear Outro"
+    },
+    "challenge": {
+        "title": "Arena de Desafio",
+        "subtitle": "Escolha seu modo de jogo",
+        "play_now": "JOGAR AGORA",
+        "true": "Verdadeiro",
+        "false": "Falso",
+        "modes": {
+            "time_attack": {
+                "title": "Time Attack",
+                "subtitle": "A mistura definitiva",
+                "description": "Perguntas mistas sobre símbolos, números e massa. Desafio rápido!"
+            },
+            "name_master": {
+                "title": "Nomear Elementos",
+                "subtitle": "Símbolo para Nome",
+                "description": "Mostramos o símbolo, você escolhe o nome correto."
+            },
+            "symbol_hunter": {
+                "title": "Caçador de Símbolos",
+                "subtitle": "Nome para Símbolo",
+                "description": "Identifique o símbolo químico correto para o nome."
+            },
+            "family_truth": {
+                "title": "Famílias Químicas",
+                "subtitle": "Verdadeiro ou Falso",
+                "description": "Valide afirmações sobre famílias. O Ouro é um Gás Nobre?"
+            }
+        },
+        "questions": {
+            "symbol": "Qual é o símbolo químico de {{element}}?",
+            "name": "Qual elemento tem o símbolo \"{{symbol}}\"?",
+            "number": "Qual é o número atômico de {{element}}?",
+            "category": "A qual categoria pertence {{element}}?",
+            "mass": "Qual é a massa atômica aproximada de {{element}}?",
+            "boolean": "{{element}} é um {{category}}?"
+        }
+    },
+    "profile": {
+        "rank_label": "Rank",
+        "score_label": "Pontos",
+        "solved_label": "Resolvidos",
+        "rank_value": "Novato",
+        "pro_title": "ChemSolver Premium",
+        "pro_subtitle": "Desbloqueie escaneamentos ilimitados e estatísticas",
+        "pro_status": "Premium Ativo",
+        "purchase_success": "Agora você é um membro Premium!",
+        "restore_success": "Compras restauradas com sucesso!",
+        "restore_fail": "Nenhuma assinatura ativa encontrada.",
+        "section_general": "Geral",
+        "menu": {
+            "edit": "Editar Perfil",
+            "notifications": "Notificações",
+            "privacy": "Privacidade e Segurança",
+            "support": "Ajuda e Suporte",
+            "terms": "Termos de Serviço",
+            "restore": "Restaurar Compras",
+            "manage": "Gerenciar Assinatura"
+        },
+        "logout": "Sair",
+        "user_name": "Usuário Químico",
+        "user_handle": "@futuro_cientista",
+        "level": "Nível {{level}}",
+        "promo": {
+            "title": "Teste Beta",
+            "enter_code": "Digite o código de 6 dígitos",
+            "redeem": "Resgatar Código",
+            "success": "Teste de 7 dias ativado! Aproveite o Premium.",
+            "invalid_code": "Código inválido. Tente novamente.",
+            "already_used_device": "Este dispositivo já utilizou um código de teste."
+        }
+    },
+    "legal": {
+        "privacy_title": "Política de Privacidade",
+        "terms_title": "Termos de Serviço",
+        "last_updated": "Última atualização: {{date}}",
+        "privacy": {
+            "intro": "Esta Política de Privacidade explica como ADSEGOM LTD coleta, usa e divulga informações sobre você ao usar ChemSolver.",
+            "section_1": {
+                "title": "1. Informações que Coletamos",
+                "sub_a": "a. Informações que Você Fornece",
+                "content_a": "• Conteúdo do Usuário: Fotos de símbolos químicos ou dados relacionados para processamento por IA.",
+                "sub_b": "b. Informações Coletadas Automaticamente",
+                "content_b": "• Dados de Uso: Recursos usados, frequência.\n• Informações do Dispositivo: Modelo, versão do SO.\n• Identificadores Anônimos: IDs de usuário do app para assinaturas."
+            },
+            "section_2": {
+                "title": "2. Como Usamos Suas Informações",
+                "content": "• Fornecer e melhorar o App.\n• Processar Solicitações de IA: Para identificar elementos químicos e fornecer contexto educacional.\n• Uso de Imagens: Usamos os dados em suas fotos apenas para analisar os dados químicos. Não usamos esses dados para autenticação ou rastreamento.\n• Dados são compartilhados com provedores de IA apenas durante a análise.\n• Gerenciar contas e assinaturas.\n• Responder a suporte."
+            },
+            "section_3": {
+                "title": "3. Como Compartilhamos Suas Informações",
+                "content": "Não vendemos seus dados pessoais. Compartilhamos apenas com Provedores de IA (processamento), Backend (armazenamento) e Requisitos Legais."
+            },
+            "section_4": {
+                "title": "4. Processamento e Retenção de Imagens",
+                "content": "• Imagens são enviadas a provedores de IA com segurança.\n• Retenção: NÃO armazenamos permanentemente suas imagens após o processamento.\n• Política de Dados: Não vendemos nem transferimos seus dados de imagem.\n• Retemos informações anônimas da conta enquanto ativa."
+            },
+            "section_5": {
+                "title": "5. Segurança de Dados",
+                "content": "Usamos medidas de segurança padrão. No entanto, nenhuma transmissão pela internet é 100% segura."
+            },
+            "section_6": {
+                "title": "6. Exclusão de Dados",
+                "content": "Você pode solicitar a exclusão de sua conta e dados no app ou entrando em contato."
+            },
+            "section_7": {
+                "title": "7. Privacidade de Crianças",
+                "content": "O App não é destinado a menores de 18 anos. Não coletamos intencionalmente informações de crianças."
+            },
+            "section_8": {
+                "title": "8. Alterações na Política",
+                "content": "Podemos atualizar esta política. Notificaremos sobre alterações."
+            },
+            "section_9": {
+                "title": "9. Contate-nos",
+                "content": "Dúvidas: info@rizzflows.com (ADSEGOM LTD)."
+            }
+        },
+        "terms": {
+            "intro": "Bem-vindo ao ChemSolver, operado por ADSEGOM LTD. Estes Termos de Serviço regem seu uso do App.",
+            "section_1": {
+                "title": "1. Acordo e Elegibilidade",
+                "content": "O App é destinado a maiores de 18 anos.",
+                "sub_reps": "Representações do Usuário:",
+                "content_reps": "• Capacidade legal para aceitar termos.\n• Não é menor de idade.\n• Não usará meios automatizados.\n• Não usará para fins ilegais."
+            },
+            "section_2": {
+                "title": "2. Descrição e Isenção de IA",
+                "content": "ChemSolver é uma ferramenta educacional com IA para identificar elementos químicos.",
+                "sub_ai": "AVISO IMPORTANTE DA IA:",
+                "content_ai": "O conteúdo é gerado por IA. Pode haver erros. Não garantimos precisão. Dados apenas para fins educacionais, não para segurança crítica."
+            },
+            "section_3": {
+                "title": "3. Compras e Assinaturas",
+                "content": "Pagamentos: Transações processadas pela loja de aplicativos.\nAssinaturas: Renovação automática a menos que cancelada 24h antes.\nCancelamento: Compras não reembolsáveis. Solicite à Apple ou Google."
+            },
+            "section_4": {
+                "title": "4. Propriedade Intelectual",
+                "content": "Possuímos todos os direitos de propriedade intelectual."
+            },
+            "section_5": {
+                "title": "5. Contribuições do Usuário",
+                "content": "Ao postar fotos, nos concede direito de usá-las para análise de IA."
+            },
+            "section_6": {
+                "title": "6. Atividades Proibidas",
+                "content": "• Recuperar dados sistematicamente.\n• Fraudar usuários.\n• Enviar vírus.\n• Conteúdo ilegal."
+            },
+            "section_7": {
+                "title": "7. Conteúdo de Terceiros",
+                "content": "Não monitoramos links de terceiros."
+            },
+            "section_8": {
+                "title": "8. Rescisão",
+                "content": "Podemos negar acesso por violação dos termos."
+            },
+            "section_9": {
+                "title": "9. Modificações",
+                "content": "Podemos alterar os Serviços a qualquer momento."
+            },
+            "section_10": {
+                "title": "10. Isenção de Garantias",
+                "content": "OS SERVIÇOS SÃO FORNECIDOS 'COMO ESTÃO'. O USO É POR SUA CONTA E RISCO."
+            },
+            "section_11": {
+                "title": "11. Limitações de Responsabilidade",
+                "content": "NÃO SEREMOS RESPONSÁVEIS POR DANOS INDIRETOS."
+            },
+            "section_12": {
+                "title": "12. Indenização",
+                "content": "Concorda em nos indenizar contra reclamações."
+            },
+            "section_13": {
+                "title": "13. Política de Privacidade",
+                "content": "Revise nossa Política de Privacidade."
+            },
+            "section_14": {
+                "title": "14. Comunicações Eletrônicas",
+                "content": "Consente em receber comunicações eletrônicas."
+            },
+            "section_15": {
+                "title": "15. Lei Aplicável",
+                "content": "Leis de Delaware (EUA)."
+            },
+            "section_16": {
+                "title": "16. Resolução de Disputas",
+                "content": "Arbitragem vinculativa em Delaware."
+            },
+            "section_17": {
+                "title": "17. Diversos",
+                "content": "Constitui o acordo integral."
+            },
+            "section_18": {
+                "title": "18. Contate-nos",
+                "content": "Dúvidas: info@rizzflows.com (ADSEGOM LTD)."
+            }
+        }
+    },
+    "modals": {
+        "error_title": "Algo deu errado",
+        "close": "Fechar",
+        "camera_title": "Acesso à Câmera",
+        "camera_desc": "O ChemSolver precisa da sua câmera para escanear equações químicas e resolvê-las instantaneamente.",
+        "allow_camera": "Permitir Câmera",
+        "notifications_title": "Mantenha-se Atualizado!",
+        "notifications_desc": "Ative as notificações para receber curiosidades diárias de química e lembretes para manter sua ofensiva.",
+        "enable_notifications": "Ativar Notificações",
+        "later": "Mais tarde"
+    },
+    "share": {
+        "problem": "PROBLEMA",
+        "solution": "SOLUÇÃO",
+        "steps_title": "Passo a Passo",
+        "generated_with": "Gerado com"
+    },
+    "notifications": {
+        "default_title": "Você sabia?",
+        "default_body": "A química é cheia de surpresas! Volte mais tarde para mais fatos."
+    }
+}

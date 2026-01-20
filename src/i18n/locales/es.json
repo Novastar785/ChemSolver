@@ -1,0 +1,587 @@
+{
+    "common": {
+        "loading": "Cargando...",
+        "error": "Error",
+        "back": "Atrás",
+        "ok": "Aceptar",
+        "cancel": "Cancelar",
+        "success": "Éxito"
+    },
+    "tabs": {
+        "table": "Tabla",
+        "solver": "Solucionador",
+        "challenge": "Desafío",
+        "learn": "Aprender",
+        "profile": "Perfil"
+    },
+    "learn": {
+        "title": "Centro de Aprendizaje",
+        "subtitle": "Domina conceptos químicos",
+        "compounds": "Compuestos",
+        "reactions": "Reacciones",
+        "origin": "Origen & Historia",
+        "structure": "Estructura",
+        "process": "Mecanismo del Proceso",
+        "properties": "Propiedades Clave",
+        "fun_fact": "¿Sabías que?",
+        "steps": "Mecanismo Paso a Paso",
+        "topics": {
+            "water": {
+                "title": "Agua",
+                "description": "Esencial para todas las formas de vida conocidas. Molécula polar capaz de disolver muchas sustancias.",
+                "details": {
+                    "origin": "Formada en el medio interestelar y abundante en el sistema solar.",
+                    "structure": "Geometría molecular angular con ángulo H-O-H de 104.5°.",
+                    "fun_fact": "El agua es la única sustancia común encontrada naturalmente en los tres estados de la materia.",
+                    "properties": "Disolvente Universal, Alta Capacidad Calorífica."
+                }
+            },
+            "salt": {
+                "title": "Cloruro de Sodio",
+                "description": "Sal de mesa común. Esencial para el equilibrio electrolítico.",
+                "details": {
+                    "origin": "Extraída de minas de sal o evaporando agua de mar.",
+                    "structure": "Estructura de red iónica gigante.",
+                    "fun_fact": "El sodio es un metal explosivo en agua, el cloro un gas tóxico, ¡pero juntos son sal comestible!",
+                    "properties": "Soluble en agua, punto de fusión alto."
+                }
+            },
+            "photosynthesis": {
+                "title": "Fotosíntesis",
+                "description": "Proceso mediante el cual las plantas usan luz solar para crear energía.",
+                "details": {
+                    "origin": "Evolucionó hace ~3 mil millones de años en cianobacterias.",
+                    "process": "Ocurre en los cloroplastos usando clorofila.",
+                    "reaction_steps": [
+                        "1. Absorción de Luz: La clorofila absorbe fotones.",
+                        "2. Fotólisis: El agua se rompe en O2, H+ y e-.",
+                        "3. Fijación de Carbono: El CO2 se convierte en Glucosa."
+                    ],
+                    "fun_fact": "Este proceso es responsable de casi todo el oxígeno en nuestra atmósfera."
+                }
+            },
+            "combustion": {
+                "title": "Combustión",
+                "description": "Reacción exotérmica entre un combustible y un oxidante.",
+                "details": {
+                    "origin": "El fuego fue descubierto por los primeros humanos hace 1.5 millones de años.",
+                    "process": "Oxidación rápida generando calor y luz.",
+                    "reaction_steps": [
+                        "1. Ignición: Se aplica calor para romper enlaces.",
+                        "2. Reacción: El combustible reacciona con Oxígeno.",
+                        "3. Liberación: Formación de CO2 y H2O libera energía."
+                    ],
+                    "fun_fact": "La combustión completa produce llama azul; la incompleta produce amarilla (hollín)."
+                }
+            },
+            "sulfuric_acid": {
+                "title": "Ácido Sulfúrico",
+                "description": "Ácido mineral fuerte con muchas aplicaciones industriales.",
+                "details": {
+                    "origin": "Conocido por los alquimistas medievales como 'aceite de vitriolo'.",
+                    "structure": "Geometría tetraédrica en el Azufre.",
+                    "fun_fact": "Es el producto químico más producido en el mundo por volumen.",
+                    "properties": "Altamente Corrosivo, Higroscópico."
+                }
+            },
+            "glucose": {
+                "title": "Glucosa",
+                "description": "Un azúcar simple que es una fuente importante de energía en organismos vivos.",
+                "details": {
+                    "origin": "Descubierta por Andreas Marggraf en 1747.",
+                    "structure": "Puede existir como cadena lineal o anillo.",
+                    "fun_fact": "El cerebro usa cerca del 20% de la energía total de glucosa del cuerpo."
+                }
+            },
+            "co2": {
+                "title": "Dióxido de Carbono",
+                "description": "Gas incoloro producido por la quema de carbono y la respiración.",
+                "details": {
+                    "origin": "Primer gas descrito como sustancia discreta por Jan Baptist van Helmont.",
+                    "structure": "Molécula lineal con enlaces dobles.",
+                    "fun_fact": "El CO2 sólido se llama 'Hielo Seco' porque sublima directamente a gas."
+                }
+            },
+            "hcl": {
+                "title": "Ácido Clorhídrico",
+                "description": "Ácido fuerte y corrosivo encontrado naturalmente en el ácido gástrico.",
+                "details": {
+                    "origin": "Históricamente llamado 'ácido muriático'.",
+                    "structure": "Molécula diatómica HCl.",
+                    "fun_fact": "¡Tu estómago produce este ácido para digerir comida (pH 1.5-3.5)!"
+                }
+            },
+            "naoh": {
+                "title": "Hidróxido de Sodio",
+                "description": "También conocido como sosa cáustica, usado en industria.",
+                "details": {
+                    "origin": "Tradicionalmente obtenido lixiviando cenizas.",
+                    "structure": "Cristal iónico con iones Na+ y OH-.",
+                    "fun_fact": "¡Usado para hacer jabón, papel e incluso pretzels!"
+                }
+            },
+            "ammonia": {
+                "title": "Amoníaco",
+                "description": "Compuesto de nitrógeno e hidrógeno (NH3). Gas incoloro de olor penetrante.",
+                "details": {
+                    "origin": "Nombrado por el Templo de Júpiter Amón en Libia.",
+                    "structure": "Geometría piramidal trigonal.",
+                    "fun_fact": "Más del 80% del amoníaco producido se usa para fertilizantes."
+                }
+            },
+            "nitric_acid": {
+                "title": "Ácido Nítrico",
+                "description": "Ácido mineral altamente corrosivo.",
+                "details": {
+                    "origin": "Mencionado en el siglo VIII por Jabir ibn Hayyan.",
+                    "structure": "Molécula plana.",
+                    "fun_fact": "Se usa principalmente para producir fertilizantes y explosivos (TNT)."
+                }
+            },
+            "baking_soda": {
+                "title": "Bicarbonato de Sodio",
+                "description": "NaHCO3, ampliamente usado en repostería.",
+                "details": {
+                    "origin": "Producido por primera vez por Nicolas Leblanc en 1791.",
+                    "structure": "Cristal iónico.",
+                    "fun_fact": "Libera gas CO2 cuando se calienta, ayudando a que los pasteles suban."
+                }
+            },
+            "ethanol": {
+                "title": "Etanol",
+                "description": "Líquido volátil, inflamable e incoloro. Alcohol simple.",
+                "details": {
+                    "origin": "La fermentación es una de las biotecnologías más antiguas.",
+                    "structure": "Alcohol simple (C2H5OH).",
+                    "fun_fact": "Es el ingrediente psicoactivo en bebidas alcohólicas y también un biocombustible."
+                }
+            },
+            "butane": {
+                "title": "Butano",
+                "description": "Un alcano con cuatro átomos de carbono (C4H10).",
+                "details": {
+                    "origin": "Descubierto por Edward Frankland en 1849.",
+                    "structure": "Alcano de cadena recta.",
+                    "fun_fact": "Comúnmente usado como combustible para encendedores y estufas portátiles."
+                }
+            },
+            "methane": {
+                "title": "Metano",
+                "description": "Compuesto químico con fórmula CH4.",
+                "details": {
+                    "origin": "Alessandro Volta descubrió metano en 1776.",
+                    "structure": "Geometría tetraédrica.",
+                    "fun_fact": "Es el componente principal del gas natural."
+                }
+            },
+            "nitrogen": {
+                "title": "Nitrógeno",
+                "description": "Gas incoloro e inodoro que forma el 78% de la atmósfera.",
+                "details": {
+                    "origin": "Descubierto por Daniel Rutherford en 1772.",
+                    "structure": "Molécula diatómica con enlace triple fuerte.",
+                    "fun_fact": "El nitrógeno líquido se usa para crioterapia y hacer helado instantáneo."
+                }
+            },
+            "oxygen": {
+                "title": "Oxígeno",
+                "description": "No metal altamente reactivo, esencial para la respiración.",
+                "details": {
+                    "origin": "Descubierto independientemente por Scheele y Priestley.",
+                    "structure": "Molécula diatómica O=O.",
+                    "fun_fact": "Cerca del 50-80% del oxígeno en la Tierra viene del océano."
+                }
+            },
+            "respiration": {
+                "title": "Respiración Celular",
+                "description": "Reacciones metabólicas para convertir energía bioquímica en ATP.",
+                "details": {
+                    "process": "Glucólisis -> Ciclo de Krebs -> Cadena de Transporte de Electrones.",
+                    "reaction_steps": [
+                        "1. Glucosa + Oxígeno son reactivos.",
+                        "2. Se libera energía como ATP.",
+                        "3. Desechos son CO2 y Agua."
+                    ],
+                    "fun_fact": "Es efectivamente el inverso de la fotosíntesis."
+                }
+            },
+            "neutralization": {
+                "title": "Neutralización",
+                "description": "Reacción en la que un ácido y una base reaccionan.",
+                "details": {
+                    "process": "Ácido + Base -> Sal + Agua.",
+                    "reaction_steps": [
+                        "1. Protones (H+) del ácido reaccionan con Hidróxido (OH-).",
+                        "2. H+ + OH- -> H2O.",
+                        "3. Los iones restantes forman la sal."
+                    ],
+                    "fun_fact": "Esta reacción se usa para tratar acidez estomacal (antiácidos)."
+                }
+            },
+            "acetic_acid": {
+                "title": "Ácido Acético",
+                "description": "Ácido orgánico que da al vinagre su gusto agrio.",
+                "details": {
+                    "origin": "Conocido desde la antigüedad en el vinagre.",
+                    "structure": "Grupo ácido carboxílico (-COOH).",
+                    "fun_fact": "El ácido acético glacial se congela a 16.6°C, pareciendo hielo."
+                }
+            },
+            "calcium_carbonate": {
+                "title": "Carbonato de Calcio",
+                "description": "Compuesto químico CaCO3, común en rocas.",
+                "details": {
+                    "origin": "Componente principal de las perlas y conchas.",
+                    "structure": "Red iónica.",
+                    "fun_fact": "Es el ingrediente activo en la cal agrícola."
+                }
+            },
+            "benzene": {
+                "title": "Benceno",
+                "description": "Compuesto orgánico aromático C6H6.",
+                "details": {
+                    "origin": "Michael Faraday aisló el benceno en 1825.",
+                    "structure": "Anillo aromático plano.",
+                    "fun_fact": "Su estructura se le ocurrió a Kekulé en un sueño de una serpiente mordiéndose la cola."
+                }
+            },
+            "fermentation": {
+                "title": "Fermentación",
+                "description": "Proceso metabólico que convierte azúcar en ácidos, gases o alcohol.",
+                "details": {
+                    "process": "Conversión anaeróbica de azúcar a etanol y CO2.",
+                    "fun_fact": "Louis Pasteur fue el primer zimólogo."
+                }
+            },
+            "esterification": {
+                "title": "Esterificación",
+                "description": "Reacción entre un ácido y un alcohol para formar un éster.",
+                "details": {
+                    "process": "Reacción de condensación liberando agua.",
+                    "fun_fact": "Los ésteres son responsables de los olores frutales agradables."
+                }
+            },
+            "aspirin": {
+                "title": "Aspirina",
+                "description": "Ácido acetilsalicílico, usado para dolor y fiebre.",
+                "details": {
+                    "origin": "Sintetizada por Felix Hoffmann en Bayer en 1897.",
+                    "structure": "Contiene grupo éster y ácido carboxílico.",
+                    "fun_fact": "Es uno de los medicamentos más usados globalmente."
+                }
+            },
+            "caffeine": {
+                "title": "Cafeína",
+                "description": "Estimulante del sistema nervioso central.",
+                "details": {
+                    "origin": "Aislada por Friedlieb Ferdinand Runge en 1819.",
+                    "structure": "Alcaloide de purina.",
+                    "fun_fact": "En plantas, actúa como pesticida natural contra insectos."
+                }
+            },
+            "ozone": {
+                "title": "Ozono",
+                "description": "Gas azul pálido con olor penetrante (O3).",
+                "details": {
+                    "origin": "Descubierto por Schönbein en 1840.",
+                    "structure": "Molécula angular.",
+                    "fun_fact": "La Capa de Ozono absorbe la radiación UV del sol."
+                }
+            },
+            "haber_process": {
+                "title": "Proceso de Haber",
+                "description": "Proceso industrial para producir amoníaco.",
+                "details": {
+                    "process": "Alta presión y temperatura con catalizador de hierro.",
+                    "reaction_steps": [
+                        "1. Gases N2 y H2 son presurizados.",
+                        "2. Pasan sobre catalizador de hierro a 450°C.",
+                        "3. El amoníaco se condensa."
+                    ],
+                    "fun_fact": "Sustenta al 40% de la población mundial mediante fertilizantes."
+                }
+            },
+            "saponification": {
+                "title": "Saponificación",
+                "description": "Conversión de grasa o aceite en jabón y alcohol.",
+                "details": {
+                    "process": "Hidrólisis de triglicéridos.",
+                    "fun_fact": "El nombre viene del latín 'sapo' (jabón)."
+                }
+            },
+            "rusting": {
+                "title": "Oxidación (Corrosión)",
+                "description": "El hierro reacciona con agua y oxígeno para formar óxido (herrumbre).",
+                "details": {
+                    "origin": "La degradación de artefactos de hierro es un reto arqueológico.",
+                    "process": "Corrosión electroquímica.",
+                    "reaction_steps": [
+                        "1. Sitio Anódico: El hierro pierde electrones.",
+                        "2. Sitio Catódico: El oxígeno acepta electrones.",
+                        "3. Formación: Fe2+ y OH- forman óxidos."
+                    ],
+                    "fun_fact": "El agua salada acelera la oxidación por conductividad."
+                }
+            },
+            "decomposition_h2o2": {
+                "title": "Descomposición H2O2",
+                "description": "Ruptura del peróxido de hidrógeno en agua y oxígeno.",
+                "details": {
+                    "process": "Descomposición catalítica.",
+                    "fun_fact": "Famoso experimento 'Pasta de Dientes de Elefante'."
+                }
+            },
+            "synthesis_water": {
+                "title": "Síntesis de Agua",
+                "description": "Reacción explosiva entre hidrógeno y oxígeno.",
+                "details": {
+                    "process": "Combinación exotérmica.",
+                    "fun_fact": "Esta reacción impulsa los motores del Transbordador Espacial."
+                }
+            }
+        }
+    },
+    "table": {
+        "title": "Tabla Periódica",
+        "legend": {
+            "title": "Categorías de Elementos"
+        }
+    },
+    "solver": {
+        "title": "Solver AI",
+        "subtitle": "Escanea y Resuelve",
+        "scan_camera": "Escanear Problema",
+        "scan_gallery": "Subir de Galería",
+        "hint": "Toma una foto clara de una ecuación química o reacción para verificar su balance o propiedades.",
+        "analyzing": "Analizando tu imagen...",
+        "detected": "Problema Detectado",
+        "steps": "Solución Paso a Paso",
+        "new_scan": "Escanear Otro",
+        "error_msg": "No pudimos analizar la imagen: {{error}}"
+    },
+    "challenge": {
+        "title": "Arena de Desafío",
+        "subtitle": "Elige tu modo de juego",
+        "play_now": "JUGAR AHORA",
+        "true": "Verdadero",
+        "false": "Falso",
+        "modes": {
+            "time_attack": {
+                "title": "Contrarreloj",
+                "subtitle": "La mezcla definitiva",
+                "description": "Preguntas mixtas sobre símbolos, números y masa. ¡Desafío aleatorio!"
+            },
+            "name_master": {
+                "title": "Nombrar Elementos",
+                "subtitle": "Símbolo a Nombre",
+                "description": "Te mostramos el símbolo, tú eliges el nombre correcto."
+            },
+            "symbol_hunter": {
+                "title": "Cazador de Símbolos",
+                "subtitle": "Nombre a Símbolo",
+                "description": "Identifica el símbolo químico correcto para el nombre dado."
+            },
+            "family_truth": {
+                "title": "Familias Químicas",
+                "subtitle": "Verdadero o Falso",
+                "description": "Valida afirmaciones sobre familias. ¿Es el Oro un Gas Noble?"
+            },
+            "lab_master": {
+                "title": "Maestro de Lab",
+                "subtitle": "Compuestos y Reacciones",
+                "description": "Prueba tu conocimiento sobre compuestos. ¿Puedes identificar Agua de H2O?"
+            }
+        },
+        "questions": {
+            "symbol": "¿Cuál es el símbolo químico del {{element}}?",
+            "name": "¿Qué elemento tiene el símbolo \"{{symbol}}\"?",
+            "number": "¿Cuál es el número atómico del {{element}}?",
+            "category": "¿A qué categoría pertenece el {{element}}?",
+            "mass": "¿Cuál es la masa atómica aproximada del {{element}}?",
+            "boolean": "¿Es el {{element}} un {{category}}?",
+            "formula_to_name": "¿Cuál es el nombre del compuesto/reacción con fórmula \"{{formula}}\"?",
+            "name_to_formula": "¿Cuál es la fórmula para {{name}}?"
+        }
+    },
+    "profile": {
+        "rank_label": "Rango",
+        "score_label": "Puntaje",
+        "solved_label": "Resueltos",
+        "rank_value": "Novato",
+        "pro_title": "ChemSolver Premium",
+        "pro_subtitle": "Escaneos ilimitados y estadísticas",
+        "pro_status": "Premium Activo",
+        "purchase_success": "¡Ahora eres miembro Premium!",
+        "restore_success": "¡Compras restauradas con éxito!",
+        "restore_fail": "No se encontraron suscripciones activas.",
+        "section_general": "General",
+        "menu": {
+            "edit": "Editar Perfil",
+            "notifications": "Notificaciones",
+            "privacy": "Privacidad y Seguridad",
+            "support": "¿Necesitas Ayuda?",
+            "terms": "Términos de Uso",
+            "restore": "Restaurar Compras",
+            "manage": "Gestionar Suscripción"
+        },
+        "logout": "Cerrar Sesión",
+        "user_name": "Usuario Químico",
+        "user_handle": "@futuro_cientifico",
+        "level": "Nivel {{level}}",
+        "promo": {
+            "title": "Prueba Beta",
+            "enter_code": "Ingresa tu código de 6 dígitos",
+            "redeem": "Canjear Código",
+            "success": "¡Prueba de 7 días activada! Disfruta Premium.",
+            "invalid_code": "Código inválido. Inténtalo de nuevo.",
+            "already_used_device": "Este dispositivo ya ha usado un código de prueba."
+        }
+    },
+    "legal": {
+        "privacy_title": "Política de Privacidad",
+        "terms_title": "Términos de Servicio",
+        "last_updated": "Última actualización: {{date}}",
+        "privacy": {
+            "intro": "Esta Política de Privacidad explica cómo ADSEGOM LTD recopila, usa y divulga información sobre usted cuando usa ChemSolver.",
+            "section_1": {
+                "title": "1. Información que Recopilamos",
+                "sub_a": "a. Información que Usted Proporciona",
+                "content_a": "• Contenido de Usuario: Fotos de símbolos químicos, tablas periódicas o datos relacionados que sube para procesamiento por IA.",
+                "sub_b": "b. Información Recopilada Automáticamente",
+                "content_b": "• Datos de Uso: Funciones utilizadas, frecuencia de uso.\n• Información del Dispositivo: Modelo, versión del SO.\n• Identificadores Anónimos: IDs de usuario de la app para gestión de suscripciones."
+            },
+            "section_2": {
+                "title": "2. Cómo Usamos Su Información",
+                "content": "• Proveer y mejorar la App.\n• Procesar Solicitudes IA: Para identificar elementos químicos y brindar contexto educativo.\n• Uso de Imágenes: Usamos los datos en sus fotos subidas únicamente para analizar los datos químicos solicitados. No usamos estos datos para autenticación o rastreo.\n• Los datos se comparten con proveedores de IA solo durante el proceso de análisis.\n• Gestionar cuentas y suscripciones.\n• Responder solicitudes de soporte."
+            },
+            "section_3": {
+                "title": "3. Cómo Compartimos Su Información",
+                "content": "No vendemos sus datos personales. Compartimos datos solo con Proveedores de IA (procesamiento), Infraestructura Backend (almacenamiento) y Requisitos Legales."
+            },
+            "section_4": {
+                "title": "4. Procesamiento y Retención de Imágenes",
+                "content": "• Las imágenes se convierten y envían a proveedores de IA de forma segura.\n• Retención: NO almacenamos permanentemente sus imágenes fuente tras el procesamiento.\n• Política de Datos: No vendemos, comerciamos ni transferimos sus datos de imagen a terceros.\n• Retenemos información anónima de la cuenta mientras esté activa."
+            },
+            "section_5": {
+                "title": "5. Seguridad de Datos",
+                "content": "Usamos medidas de seguridad estándar. Sin embargo, ninguna transmisión por internet es 100% segura."
+            },
+            "section_6": {
+                "title": "6. Eliminación de Datos",
+                "content": "Puede solicitar la eliminación de su cuenta y datos dentro de la app o contactándonos."
+            },
+            "section_7": {
+                "title": "7. Privacidad de Menores",
+                "content": "La App no está destinada a menores de 18 años. No recopilamos información de niños conscientemente."
+            },
+            "section_8": {
+                "title": "8. Cambios a la Política",
+                "content": "Podemos actualizar esta política. Le notificaremos de los cambios."
+            },
+            "section_9": {
+                "title": "9. Contáctenos",
+                "content": "Si tiene preguntas, contáctenos en info@rizzflows.com (ADSEGOM LTD)."
+            }
+        },
+        "terms": {
+            "intro": "Bienvenido a ChemSolver, una aplicación móvil operada por ADSEGOM LTD. Estos Términos de Servicio rigen su acceso y uso de la App.",
+            "section_1": {
+                "title": "1. Acuerdo y Elegibilidad",
+                "content": "La App está destinada a mayores de 18 años. Menores de 18 no pueden usar los Servicios.",
+                "sub_reps": "Representaciones del Usuario:",
+                "content_reps": "• Tiene capacidad legal para aceptar estos términos.\n• No es menor de edad en su jurisdicción.\n• No accederá mediante medios automatizados (bots).\n• No usará los Servicios para fines ilegales."
+            },
+            "section_2": {
+                "title": "2. Descripción y Descargo de IA",
+                "content": "ChemSolver es una herramienta educativa con IA para identificar elementos químicos. Permite subir fotos para análisis.",
+                "sub_ai": "DESCARGO IMPORTANTE DE IA:",
+                "content_ai": "El contenido es generado por IA. Puede haber errores o 'alucinaciones'. No garantizamos precisión. Los datos son solo educativos, no para uso crítico de laboratorio o seguridad. Usted es responsable de revisar la información."
+            },
+            "section_3": {
+                "title": "3. Compras y Suscripciones",
+                "content": "Pagos: Acepta proporcionar información precisa. Las transacciones son procesadas por la tienda de aplicaciones.\nSuscripciones: Se renuevan automáticamente a menos que se cancelen 24 horas antes.\nCancelación: Las compras no son reembolsables. Solicite reembolsos a Apple o Google."
+            },
+            "section_4": {
+                "title": "4. Propiedad Intelectual",
+                "content": "Poseemos todos los derechos de propiedad intelectual. Le otorgamos una licencia limitada revocable para usar la App."
+            },
+            "section_5": {
+                "title": "5. Contribuciones de Usuario",
+                "content": "Al publicar Contribuciones (fotos), nos otorga derecho a usarlas para brindar el servicio de análisis IA."
+            },
+            "section_6": {
+                "title": "6. Actividades Prohibidas",
+                "content": "• Recuperar datos sistemáticamente.\n• Engañar o estafar a usuarios.\n• Subir virus.\n• Generar contenido ilegal."
+            },
+            "section_7": {
+                "title": "7. Contenido de Terceros",
+                "content": "No monitoreamos sitios web de terceros enlazados."
+            },
+            "section_8": {
+                "title": "8. Terminación",
+                "content": "Podemos denegar el acceso por incumplimiento de términos."
+            },
+            "section_9": {
+                "title": "9. Modificaciones",
+                "content": "Podemos cambiar los Servicios en cualquier momento."
+            },
+            "section_10": {
+                "title": "10. Descargo de Garantías",
+                "content": "LOS SERVICIOS SE PROVEEN 'TAL CUAL'. SU USO ES BAJO SU PROPIO RIESGO."
+            },
+            "section_11": {
+                "title": "11. Limitaciones de Responsabilidad",
+                "content": "NO SEREMOS RESPONSABLES POR DAÑOS INDIRECTOS O PUNITIVOS."
+            },
+            "section_12": {
+                "title": "12. Indemnización",
+                "content": "Acepta indemnizarnos contra cualquier pérdida o reclamo."
+            },
+            "section_13": {
+                "title": "13. Política de Privacidad",
+                "content": "Revise nuestra Política de Privacidad incorporada en estos términos."
+            },
+            "section_14": {
+                "title": "14. Comunicaciones Electrónicas",
+                "content": "Acepta recibir comunicaciones electrónicas legalmente válidas."
+            },
+            "section_15": {
+                "title": "15. Ley Aplicable",
+                "content": "Leyes del Estado de Delaware (EE. UU.)."
+            },
+            "section_16": {
+                "title": "16. Resolución de Disputas",
+                "content": "Arbitraje vinculante en Delaware."
+            },
+            "section_17": {
+                "title": "17. Misceláneos",
+                "content": "Constituye el acuerdo completo."
+            },
+            "section_18": {
+                "title": "18. Contáctenos",
+                "content": "Preguntas a info@rizzflows.com (ADSEGOM LTD)."
+            }
+        }
+    },
+    "modals": {
+        "error_title": "Algo salió mal",
+        "close": "Cerrar",
+        "camera_title": "Acceso a la Cámara",
+        "camera_desc": "ChemSolver necesita tu cámara para escanear ecuaciones químicas y resolverlas al instante.",
+        "allow_camera": "Permitir Cámara",
+        "notifications_title": "¡Mantente Actualizado!",
+        "notifications_desc": "Activa las notificaciones para recibir datos curiosos de química y recordatorios para mantener tu racha.",
+        "enable_notifications": "Activar Notificaciones",
+        "later": "Más tarde"
+    },
+    "share": {
+        "problem": "PROBLEMA",
+        "solution": "SOLUCIÓN",
+        "steps_title": "Paso a paso",
+        "generated_with": "Generado con"
+    },
+    "notifications": {
+        "default_title": "¿Sabías que?",
+        "default_body": "¡La química está llena de sorpresas! Vuelve más tarde para más datos."
+    }
+}
