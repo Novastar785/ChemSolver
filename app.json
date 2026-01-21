@@ -16,6 +16,7 @@
       "supportsTablet": false,
       "bundleIdentifier": "com.adsegom.chemsolver",
       "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
         "CFBundleLocalizations": [
           "en",
           "es",
