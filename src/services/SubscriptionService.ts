@@ -2,6 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Purchases, { PurchasesPackage, CustomerInfo, LOG_LEVEL } from 'react-native-purchases';
 import { Platform } from 'react-native';
 import { PromoService } from './PromoService';
+import { SUPABASE_CONFIG } from '../config/supabase';
 
 const STORAGE_KEYS = {
     DAILY_COUNT: 'chemsolver_daily_scans',
@@ -10,12 +11,7 @@ const STORAGE_KEYS = {
 
 const MAX_FREE_SCANS = 2;
 
-// REVENUECAT CONFIGURATION
-const API_KEYS = {
-    ios: 'appl_USzoTeKpKRozOwZGgFbtniNHSSb', // UPDATED WITH YOUR IOS KEY
-    android: 'goog_...' // TODO: REPLACE WITH YOUR REVENUECAT ANDROID KEY
-};
-
+// ENTITLEMENT ID DEFINITION
 const ENTITLEMENT_ID = 'ChemSolver Premium'; // Ensure this matches your RevenueCat Entitlement
 
 export const SubscriptionService = {
@@ -23,9 +19,9 @@ export const SubscriptionService = {
     async init(): Promise<void> {
         try {
             if (Platform.OS === 'ios') {
-                Purchases.configure({ apiKey: API_KEYS.ios });
+                Purchases.configure({ apiKey: SUPABASE_CONFIG.REVENUECAT_API_KEYS.ios });
             } else if (Platform.OS === 'android') {
-                Purchases.configure({ apiKey: API_KEYS.android });
+                Purchases.configure({ apiKey: SUPABASE_CONFIG.REVENUECAT_API_KEYS.android });
             }
             // Purchases.setLogLevel(LOG_LEVEL.DEBUG); // Enable for debugging
         } catch (e) {

@@ -8,10 +8,7 @@ import { useRouter } from 'expo-router';
 import GlassCard from '../../src/components/GlassCard';
 
 import { useTranslation } from 'react-i18next';
-
-// Replace with your actual Supabase Function URL (e.g., from your project settings)
-const SUPABASE_FUNCTION_URL = "https://nnoofrjtujkemrjnlios.supabase.co/functions/v1/solve-chemistry";
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ub29mcmp0dWprZW1yam5saW9zIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjUwNTIzODgsImV4cCI6MjA4MDYyODM4OH0.vtlUcTzxzFxpL-5aGMlkoVR0a7Ld9Kq1CfRx-_6mt5U";
+import { SUPABASE_CONFIG } from '../../src/config/supabase';
 
 import * as ImagePicker from 'expo-image-picker';
 // @ts-ignore
@@ -137,11 +134,11 @@ export default function SolverScreen() {
             });
 
             // 2. Call Edge Function
-            const response = await fetch(SUPABASE_FUNCTION_URL, {
+            const response = await fetch(SUPABASE_CONFIG.FUNCTION_URL, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${SUPABASE_ANON_KEY}`
+                    'Authorization': `Bearer ${SUPABASE_CONFIG.ANON_KEY}`
                 },
                 body: JSON.stringify({
                     imageBase64: base64,

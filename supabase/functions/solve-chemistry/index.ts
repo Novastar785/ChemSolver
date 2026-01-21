@@ -24,9 +24,9 @@ serve(async (req: Request) => {
     }
 
     // Google Gemini Implementation
-    const GEMINI_API_KEY = "AIzaSyCX3HuvG7Rf0zKNzaLxBGrHoamhO7VuyCk"; // User provided key
+    const GEMINI_API_KEY = Deno.env.get('ChemSolver_GEMINI_API_KEY');
     if (!GEMINI_API_KEY) {
-      throw new Error('Missing GEMINI_API_KEY')
+      throw new Error('Missing ChemSolver_GEMINI_API_KEY in environment variables')
     }
 
     // Call Gemini 3 Flash Preview
