@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { StyleSheet, View, ActivityIndicator } from 'react-native';
-import { Paywall, PAYWALL_RESULT } from 'react-native-purchases-ui';
+import RevenueCatUI, { PAYWALL_RESULT } from 'react-native-purchases-ui';
 import { CustomerInfo, PurchasesStoreTransaction } from 'react-native-purchases';
 
 interface PaywallModalProps {
@@ -19,7 +19,7 @@ export function PaywallModal({ visible, onClose, onSuccess }: PaywallModalProps)
 
     return (
         <View style={StyleSheet.absoluteFill}>
-            <Paywall
+            <RevenueCatUI.Paywall
                 onDismiss={() => {
                     onClose();
                 }}

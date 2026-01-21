@@ -62,7 +62,7 @@ export default function TopicDetailScreen() {
     const propertiesText = t(`learn.topics.${item.id}.details.properties`);
 
     // Steps might be an array
-    const steps = t(`learn.topics.${item.id}.details.reaction_steps`, { returnObjects: true });
+    const steps = t(`learn.topics.${item.id}.details.reaction_steps`, { returnObjects: true }) as string[];
     const hasSteps = Array.isArray(steps);
 
     return (
