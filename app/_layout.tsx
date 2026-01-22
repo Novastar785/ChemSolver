@@ -6,10 +6,6 @@ import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { useEffect } from 'react';
 import '../src/i18n';
-import { scheduleDailyNotifications } from '../src/utils/notifications';
-
-import { NotificationPermissionModal } from '../src/components/NotificationPermissionModal';
-
 import { SubscriptionService } from '../src/services/SubscriptionService';
 
 export default function Layout() {
@@ -26,11 +22,6 @@ export default function Layout() {
             <Stack.Screen name="(tabs)" />
             <Stack.Screen name="camera" options={{ presentation: 'modal' }} />
           </Stack>
-
-          <NotificationPermissionModal onPermissionGranted={() => {
-            scheduleDailyNotifications();
-          }} />
-
         </BottomSheetModalProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>

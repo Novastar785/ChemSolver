@@ -2,7 +2,8 @@
   "expo": {
     "name": "ChemSolver",
     "slug": "chemsolver",
-    "version": "1.0.1",
+    "scheme": "chemsolver",
+    "version": "1.0.6",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -15,7 +16,7 @@
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.adsegom.chemsolver",
-      "buildNumber": "2",
+      "buildNumber": "7",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false,
         "CFBundleLocalizations": [
@@ -26,7 +27,8 @@
           "fr"
         ],
         "NSCameraUsageDescription": "This app uses the camera to scan chemical equations and periodic table elements for AI analysis.",
-        "NSPhotoLibraryUsageDescription": "This app needs access to your photos to let you upload chemical problems for AI solving."
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photos to let you upload chemical problems for AI solving.",
+        "NSPhotoLibraryAddUsageDescription": "This app needs permission to save generated reports and images to your gallery."
       }
     },
     "android": {
@@ -35,12 +37,11 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.adsegom.chemsolver",
-      "versionCode": 2,
+      "versionCode": 7,
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
       "permissions": [
-        "android.permission.CAMERA",
-        "android.permission.RECORD_AUDIO"
+        "android.permission.CAMERA"
       ]
     },
     "web": {
