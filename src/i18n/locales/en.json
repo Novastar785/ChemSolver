@@ -568,7 +568,7 @@
         "close": "Close",
         "camera_title": "Camera Access",
         "camera_desc": "ChemSolver needs your camera to scan chemical equations and solve them instantly.",
-        "allow_camera": "Allow Camera",
+        "allow_camera": "Continue",
         "notifications_title": "Stay Updated!",
         "notifications_desc": "Enable notifications to get daily chemistry facts and reminders to keep your streak alive.",
         "enable_notifications": "Enable Notifications",

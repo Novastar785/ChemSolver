@@ -265,7 +265,7 @@
         "close": "Fermer",
         "camera_title": "Accès à la caméra",
         "camera_desc": "ChemSolver a besoin de votre caméra pour scanner des équations chimiques et les résoudre instantanément.",
-        "allow_camera": "Autoriser la caméra",
+        "allow_camera": "Continuer",
         "notifications_title": "Restez informé !",
         "notifications_desc": "Activez les notifications pour recevoir des faits quotidiens sur la chimie et des rappels pour maintenir votre série.",
         "enable_notifications": "Activer les notifications",
